@@ -2,7 +2,7 @@
 
 ## Description
 
-A simple quiz to see who is the nerdiest nerd of all time. First time utilizing Javascript components and interacting with user information.
+This was built as foundational practice for Javascript. It is a simple quiz that interacts with user input and keeps track of time and highscore.
 
 ## Application Link
 
