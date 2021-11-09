@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+}
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: rgb(201, 201, 201);
+}
+
+header {
+  font-family: fantasy;
+  display: flex;
+  justify-content: space-between;
+  padding: 2px;
+  margin-bottom: 50px;
+}
+
+header p {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-size: 0.9rem;
+}
+
+header p:hover {
+  font-size: 1.5rem;
+  font-style: oblique;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+#insertTimer {
+  content: " ";
+  text-align: end;
+}
+
+.quizBody {
+  display: flexbox;
+  background-color: whitesmoke;
+  border-radius: 2%;
+  box-shadow: 8px 8px 8px #888888;
+  color: black;
+  margin: 0 auto;
+  max-width: 80%;
+  padding: 40px 50px;
+  text-align: center;
+}
+
+.quizBody h2 {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.quizBodyFooter {
+  text-align: center;
+}
+
+button {
+  border: solid rgb(201, 201, 201) 1px;
+  background-color: black;
+  border-radius: 20%;
+  box-shadow: 8px 8px 8px #888888;
+  color: whitesmoke;
+  display: inline-block;
+  font-family: fantasy;
+  font-size: 1.2rem;
+  line-height: 22px;
+  margin: 50px 20px 40px 20px;
+  padding: 15px 35px;
+  text-align: center;
+  cursor: grab;
+}
+
+button:hover {
+  border: solid black 1px;
+  background-color: rgb(201, 201, 201);
+  color: black;
+}
+
+#quizContent {
+  justify-content: center;
+  text-align: center;
+  border: solid black 1px;
+  box-shadow: 8px 8px 8px #888888;
+  height: 375px;
+  width: 900px;
+}
+
+.hide {
+  display: none;
+}
