@@ -60,7 +60,8 @@ function question1() {
   aButton.textContent = "A. Mayor";
   aButton.type = "submit";
   aButton.addEventListener("click", function () {
-    userScore + 5;
+    userScore += 5;
+    console.log(userScore);
     document.querySelector("#answerText").textContent = "Correct!";
     question2();
   });
@@ -81,7 +82,7 @@ function question1() {
     question2();
   });
   var dButton = document.createElement("button");
-  dButton.textContent = "D. Mayor";
+  dButton.textContent = "D. Bartender";
   dButton.type = "submit";
   dButton.addEventListener("click", function () {
     secondsLeft -= 3;
@@ -127,7 +128,8 @@ function question2() {
   dButton.textContent = "D. Phoenix Feather";
   dButton.type = "submit";
   dButton.addEventListener("click", function () {
-    userScore + 5;
+    userScore += 5;
+    console.log(userScore);
     document.querySelector("#answerText").textContent = "Correct!";
     question3();
   });
@@ -146,7 +148,8 @@ function question3() {
   aButton.textContent = "A. 151";
   aButton.type = "submit";
   aButton.addEventListener("click", function () {
-    userScore = 5;
+    userScore += 5;
+    console.log(userScore);
     document.querySelector("#answerText").textContent = "Correct!";
     question4();
   });
@@ -196,7 +199,8 @@ function question4() {
   bButton.textContent = "B. Jumpman";
   bButton.type = "submit";
   bButton.addEventListener("click", function () {
-    userScore + 5;
+    userScore += 5;
+    console.log(userScore);
     document.querySelector("#answerText").textContent = "Correct!";
     question5();
   });
@@ -247,7 +251,8 @@ function question5() {
   cButton.textContent = "C. Hagrid";
   cButton.type = "submit";
   cButton.addEventListener("click", function () {
-    userScore + 5;
+    userScore += 5;
+    console.log(userScore);
     document.querySelector("#answerText").textContent = "Correct!";
     quizEnd();
   });
