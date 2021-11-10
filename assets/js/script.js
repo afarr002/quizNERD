@@ -5,6 +5,7 @@ var quizQuestions = document.getElementById("quizQuestions");
 var quizAnswers = document.getElementById("quizAnswers");
 var playAgainButton = document.getElementById("playAgainButton");
 var secondsLeft = 30;
+var timerCountDown = "";
 var userScore = 0;
 var userInitials = " ";
 var aButton = false;
@@ -25,7 +26,7 @@ function startQuiz() {
 }
 
 function startTime() {
-  var timerCountDown = setInterval(function () {
+  timerCountDown = setInterval(function () {
     secondsLeft--;
     timerLocation.textContent = "Timer: " + secondsLeft;
 
@@ -43,7 +44,6 @@ function startTime() {
     }
 
     if (secondsLeft <= 0) {
-      console.log("secondsLeft");
       clearInterval(timerCountDown);
       quizEnd();
       return;
@@ -61,7 +61,6 @@ function question1() {
   aButton.type = "submit";
   aButton.addEventListener("click", function () {
     userScore += 5;
-    console.log(userScore);
     document.querySelector("#answerText").textContent = "Correct!";
     question2();
   });
@@ -129,7 +128,6 @@ function question2() {
   dButton.type = "submit";
   dButton.addEventListener("click", function () {
     userScore += 5;
-    console.log(userScore);
     document.querySelector("#answerText").textContent = "Correct!";
     question3();
   });
@@ -149,7 +147,6 @@ function question3() {
   aButton.type = "submit";
   aButton.addEventListener("click", function () {
     userScore += 5;
-    console.log(userScore);
     document.querySelector("#answerText").textContent = "Correct!";
     question4();
   });
@@ -200,7 +197,6 @@ function question4() {
   bButton.type = "submit";
   bButton.addEventListener("click", function () {
     userScore += 5;
-    console.log(userScore);
     document.querySelector("#answerText").textContent = "Correct!";
     question5();
   });
@@ -252,8 +248,8 @@ function question5() {
   cButton.type = "submit";
   cButton.addEventListener("click", function () {
     userScore += 5;
-    console.log(userScore);
     document.querySelector("#answerText").textContent = "Correct!";
+    console.log(secondsLeft);
     quizEnd();
   });
   var dButton = document.createElement("button");
@@ -271,12 +267,14 @@ function question5() {
 }
 
 function quizEnd() {
+  clearInterval(timerCountDown);
   userInitials = prompt(
     "Flex on your friends!" + "\n" + "Enter your initials for the leaderboard!"
   );
 
   quizQuestions.textContent = "Game Over!";
-  quizAnswers.textContent = userInitials + "'s Score:" + " " + userScore;
+  quizAnswers.textContent =
+    userInitials + "'s Score:" + " " + (userScore + secondsLeft);
 
   highScore();
 
@@ -290,7 +288,7 @@ function highScore() {
   //create user data object
   const userDataEntry = {
     initials: userInitials,
-    score: userScore,
+    score: userScore + secondsLeft,
   };
   //updated old storage
   allData.push(userDataEntry);
