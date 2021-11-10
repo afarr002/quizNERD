@@ -42,7 +42,7 @@ function startTime() {
       timerLocation.style.color = "red";
     }
 
-    if (secondsLeft === 0) {
+    if (secondsLeft <= 0) {
       console.log("secondsLeft");
       clearInterval(timerCountDown);
       quizEnd();
@@ -68,7 +68,7 @@ function question1() {
   bButton.textContent = "B. Gardener";
   bButton.type = "submit";
   bButton.addEventListener("click", function () {
-    secondsLeft - 3;
+    secondsLeft -= 3;
     document.querySelector("#answerText").textContent = "Incorrect!";
     question2();
   });
@@ -76,7 +76,7 @@ function question1() {
   cButton.textContent = "C. Bouncer";
   cButton.type = "submit";
   cButton.addEventListener("click", function () {
-    secondsLeft - 3;
+    secondsLeft -= 3;
     document.querySelector("#answerText").textContent = "Incorrect!";
     question2();
   });
@@ -84,7 +84,7 @@ function question1() {
   dButton.textContent = "D. Mayor";
   dButton.type = "submit";
   dButton.addEventListener("click", function () {
-    secondsLeft - 3;
+    secondsLeft -= 3;
     document.querySelector("#answerText").textContent = "Incorrect!";
     question2();
   });
@@ -103,7 +103,7 @@ function question2() {
   aButton.textContent = "A. Unicorn Tail Hair";
   aButton.type = "submit";
   aButton.addEventListener("click", function () {
-    secondsLeft - 3;
+    secondsLeft -= 3;
     document.querySelector("#answerText").textContent = "Incorrect!";
     question3();
   });
@@ -111,7 +111,7 @@ function question2() {
   bButton.textContent = "B. Dragon Heartstrig";
   bButton.type = "submit";
   bButton.addEventListener("click", function () {
-    secondsLeft - 3;
+    secondsLeft -= 3;
     document.querySelector("#answerText").textContent = "Incorrect!";
     question3();
   });
@@ -119,7 +119,7 @@ function question2() {
   cButton.textContent = "C. Hippogriff Feather";
   cButton.type = "submit";
   cButton.addEventListener("click", function () {
-    secondsLeft - 3;
+    secondsLeft -= 3;
     document.querySelector("#answerText").textContent = "Incorrect!";
     question3();
   });
@@ -154,7 +154,7 @@ function question3() {
   bButton.textContent = "B. 150";
   bButton.type = "submit";
   bButton.addEventListener("click", function () {
-    secondsLeft - 3;
+    secondsLeft -= 3;
     document.querySelector("#answerText").textContent = "Incorrect!";
     question4();
   });
@@ -162,7 +162,7 @@ function question3() {
   cButton.textContent = "C. 101";
   cButton.type = "submit";
   cButton.addEventListener("click", function () {
-    secondsLeft - 3;
+    secondsLeft -= 3;
     document.querySelector("#answerText").textContent = "Incorrect!";
     question4();
   });
@@ -170,7 +170,7 @@ function question3() {
   dButton.textContent = "D. 100";
   dButton.type = "submit";
   dButton.addEventListener("click", function () {
-    secondsLeft - 3;
+    secondsLeft -= 3;
     document.querySelector("#answerText").textContent = "Incorrect!";
     question4();
   });
@@ -188,7 +188,7 @@ function question4() {
   aButton.textContent = "A. Mario";
   aButton.type = "submit";
   aButton.addEventListener("click", function () {
-    secondsLeft - 3;
+    secondsLeft -= 3;
     document.querySelector("#answerText").textContent = "Incorrect!";
     question5();
   });
@@ -204,7 +204,7 @@ function question4() {
   cButton.textContent = "C. Prince Toad";
   cButton.type = "submit";
   cButton.addEventListener("click", function () {
-    secondsLeft - 3;
+    secondsLeft -= 3;
     document.querySelector("#answerText").textContent = "Incorrect!";
     question5();
   });
@@ -212,7 +212,7 @@ function question4() {
   dButton.textContent = "D. Mustache";
   dButton.type = "submit";
   dButton.addEventListener("click", function () {
-    secondsLeft - 3;
+    secondsLeft -= 3;
     document.querySelector("#answerText").textContent = "Incorrect!";
     question5();
   });
@@ -231,7 +231,7 @@ function question5() {
   aButton.textContent = "A. Professor Mcgonagall";
   aButton.type = "submit";
   aButton.addEventListener("click", function () {
-    secondsLeft - 3;
+    secondsLeft -= 3;
     document.querySelector("#answerText").textContent = "Incorrect!";
     quizEnd();
   });
@@ -239,7 +239,7 @@ function question5() {
   bButton.textContent = "B. Professor Dumbledore";
   bButton.type = "submit";
   bButton.addEventListener("click", function () {
-    secondsLeft - 3;
+    secondsLeft -= 3;
     document.querySelector("#answerText").textContent = "Incorrect!";
     quizEnd();
   });
@@ -255,7 +255,7 @@ function question5() {
   dButton.textContent = "D. Ron";
   dButton.type = "submit";
   dButton.addEventListener("click", function () {
-    secondsLeft - 3;
+    secondsLeft -= 3;
     document.querySelector("#answerText").textContent = "Incorrect!";
     quizEnd();
   });
