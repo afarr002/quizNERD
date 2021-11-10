@@ -273,8 +273,8 @@ function quizEnd() {
   );
 
   quizQuestions.textContent = "Game Over!";
-  quizAnswers.textContent =
-    userInitials + "'s Score:" + " " + (userScore + secondsLeft);
+  quizAnswers.textContent = userInitials.trim();
+  +"'s Score:" + " " + (userScore + secondsLeft);
 
   highScore();
 
