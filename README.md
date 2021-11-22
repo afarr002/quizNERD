@@ -2,7 +2,15 @@
 
 ## Description
 
-This was built as foundational practice for Javascript. It is a simple quiz that interacts with user input and keeps track of time and highscore.
+This page was built to determine who is the Nerdiest Nerd of all time. This is accomplished via a quiz on my favorite Nerd topics. Your goal is to race the time and collect as many points as possible. For each correct answer, you earn 5 points. For every incorrect answer, however, you lose 3 seconds from your remaining time.
+
+## Tech Used
+
+This page was built using HTML, CSS, and JavaScript.
+
+## Icebox
+
+I will be adding more questions, and question randomization in future development.
 
 ## Application Link
 
